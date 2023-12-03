@@ -5,6 +5,8 @@ import IconHeart from "./IconHeart";
 
 const Gallery = () => {
   const { pictures, setPictures } = useContext(PicContext);
+
+  // Esta función actualiza el estado global para retornar las imagenes cuyo boton cambió su valor a red&true
   const handleLikeClick = (id) => {
     const updatedPictures = pictures.map((picture) => {
       if (picture.id === id) {
@@ -46,6 +48,7 @@ const Gallery = () => {
           </button>
           <br />
           <Card.Body>
+            {/* Se linkea el nombre para darle crédito al artista correspondiente */}
             <a href={picture.photographer_url}>
               <h1>{picture.photographer}</h1>
             </a>

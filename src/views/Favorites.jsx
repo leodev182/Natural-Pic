@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 
 const Favorites = () => {
   const { pictures } = useContext(PicContext);
+  //relizamos un flitrado de las card que contienen el valor true
   const likedPictures = pictures.filter((picture) => picture.liked);
 
   return (
