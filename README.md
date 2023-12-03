@@ -1,5 +1,4 @@
-# React + Vite
-
+# Natural Pic
 ## Install
 
 ```bash
